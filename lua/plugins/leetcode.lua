@@ -33,7 +33,17 @@ return {
 
     logging = true,
 
-    injector = {},
+    injector = {
+      ["cpp"] = {
+        before = {
+          "#include <vector>",
+          "#include <string>",
+          "#include <algorithms>",
+          "#include <unordered_map",
+          "using namespace std;",
+        },
+      },
+    },
 
     cache = {
       update_interval = 60 * 60 * 24 * 7, -- 7 days
