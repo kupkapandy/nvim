@@ -11,6 +11,7 @@ return {
         "typescript-language-server",
         "css-lsp",
         "clangd",
+        "pyright",
       })
     end,
   },
@@ -124,8 +125,15 @@ return {
           },
         },
         clangd = {},
+        pyright = {},
       },
-      setup = {},
+      setup = {
+        clangd = function(_, opts)
+          opts.on_attach = function(client)
+            client.server_capabilities.documentFormattingProvider = false
+          end
+        end,
+      },
     },
   },
   {

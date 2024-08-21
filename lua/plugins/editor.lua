@@ -144,4 +144,8 @@ return {
       require("telescope").load_extension("file_browser")
     end,
   },
+  {
+    "fole/flash.nvim",
+    enabled = false,
+  },
 }

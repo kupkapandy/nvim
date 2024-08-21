@@ -4,6 +4,7 @@ return {
     opts = {
       ensure_installed = {
         "javascript",
+        "python",
         "typescript",
         "css",
         "gitignore",
@@ -14,6 +15,7 @@ return {
         "sql",
         "vim",
         "lua",
+        "cpp",
       },
       query_linter = {
         enable = true,
