@@ -100,4 +100,7 @@ return {
 
     image_support = false,
   },
+  {
+    "ThePrimeagen/vim-be-good",
+  },
 }
